@@ -69,12 +69,12 @@ objects:
     targetCPUUtilizationPercentage: 50
 parameters:
 - name: SOURCE_REPOSITORY_URL
-  value: https://github.com/tuanbo91/golang-ex.git
+  value: https://github.com/myominzin/golang-ex.git
 - name: SOURCE_REPOSITORY_REF
   value: v1.0
 - name: CONTEXT_DIR
 - name: APPLICATION_DOMAIN
-  value: chat.leanhtuan.org
+  value: beego-demo.apps.cluster-yangon-440d.yangon-440d.example.opentlc.com
 - name: GITHUB_WEBHOOK_SECRET
   generate: expression
   from: "[a-zA-Z0-9]{40}"
