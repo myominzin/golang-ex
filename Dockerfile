@@ -1,4 +1,4 @@
-FROM golang:1.11
+FROM image-registry.openshift-image-registry.svc:5000/golang-demo/beego-example
 
 USER nobody
 
