@@ -17,7 +17,7 @@ objects:
       port: 8080
       targetPort: 8080
     selector:
-      name: beego-example  
+      name: beego-example
 - kind: Route
   apiVersion: v1
   metadata:
@@ -47,7 +47,7 @@ objects:
     output:
       to:
         kind: ImageStreamTag
-        name: beego-example:latest
+        name: beego-example
     triggers:
     - type: ConfigChange
     - type: GitHub
@@ -70,7 +70,7 @@ objects:
         - beego-example
         from:
           kind: ImageStreamTag
-          name: beego-example:latest
+          name: beego-example
     - type: ConfigChange
     replicas: 1
     selector:
@@ -121,7 +121,7 @@ parameters:
 - name: SOURCE_REPOSITORY_REF
 - name: CONTEXT_DIR
 - name: APPLICATION_DOMAIN
-  value: beego-demo.apps.cluster-yangon-440d.yangon-440d.example.opentlc.com
+  value: beego-test.apps.cluster-yangon-440d.yangon-440d.example.opentlc.com
 - name: GITHUB_WEBHOOK_SECRET
   generate: expression
   from: "[a-zA-Z0-9]{40}"
