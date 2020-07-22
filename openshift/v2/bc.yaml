@@ -19,7 +19,7 @@ spec:
   source:
     git:
       ref: v1.1
-      uri: https://github.com/tuanbo91/golang-ex.git
+      uri: https://github.com/myominzin/golang-ex.git
     type: Git
   strategy:
     dockerStrategy: {}
