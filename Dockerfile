@@ -1,4 +1,4 @@
-FROM image-registry.openshift-image-registry.svc:5000/openshift/golang:1.11
+FROM golang:1.11
 
 USER nobody
 
